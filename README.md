@@ -1,20 +1,7 @@
-# Sale-Prediction-Retail-Project
+# Retail Daily Sales Prediction With ARIMA
 
-Sale Prediction For Retail
-Sales Forecasting using ARIMA
-Overview
-	• Predict daily revenue using time series modeling 
-Dataset
-	• Online Retail Dataset 
-Steps
-	• Data cleaning 
-	• EDA 
-	• Stationarity testing 
-	• ARIMA modeling 
-	• Evaluation 
-Results
-	• MAE: X 
-	• RMSE: X 
 
-Summary of results.
-After cleaning and aggregating the online retail dataset, we applied ARIMA(1,1,1) to forecast daily sales. The original series was non-stationary (ADF p = 0.78), so differencing was applied to achieve stationarity (ADF p ≈ 0). The AR(1) and MA(1) coefficients indicate that yesterday’s sales and previous forecast errors significantly affect today’s sales. Model accuracy metrics show MAE ≈ 21,866 and RMSE ≈ 32,530, meaning the forecasts are reasonably accurate given the scale of daily sales. These results suggest predictable short-term trends, which can inform inventory and sales planning. Limitations include inability to capture external events such as promotions or holidays.
+Adnaan Thadathil, [insert Full Name here]
+Department of Computer Science, Delaware State University, Dover, Delaware 19901
+
+Retail businesses rely heavily on accurate sales forecasting to optimize inventory management, staffing, and strategic planning. However, predicting daily sales can be challenging due to fluctuations in customer demand and external influences. This project addresses the problem of forecasting retail sales by applying time series modeling techniques to historical transaction data. The objective of this project is to test and develop a model that can predict daily revenue using a Retail Dataset from UC Irvine Machine Learning Repository. To achieve this, the dataset was first cleaned and preprocessed to remove missing values, duplicates, and irrelevant entries. Exploratory Data Analysis (EDA) was then conducted to identify trends, seasonality, and anomalies in the data. Stationarity of the time series was evaluated using the Augmented Dickey-Fuller (ADF) test, which initially indicated non-stationarity (p = 0.78). First-order differencing was applied to stabilize the mean, resulting in a stationary series (ADF p ≈ 0). An ARIMA(1,1,1) model was subsequently implemented to capture temporal dependencies in the data. The results demonstrate that both autoregressive (AR(1)) and moving average (MA(1)) components significantly influence sales predictions, indicating that past sales values and prior forecast errors play a key role in determining future revenue. The model achieved a Mean Absolute Error (MAE) of approximately 21,866 and a Root Mean Squared Error (RMSE) of approximately 32,530, suggesting a reasonable level of accuracy given the scale and variability of daily sales.
